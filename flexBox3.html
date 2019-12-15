@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FlexBox 3 CSS</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scal=1">
+
+	<style type="text/css">/*The CSS stylesheet*/
+		.container{
+			display: flex;
+		}
+
+	  /*2nd divContainer*/
+	  	.container-2{
+	  		display: flex;
+	  		justify-content: space-between;
+	  	}
+
+		.container div, .container-2 div{
+			border: 1px solid #ccc;
+			padding: 10px;
+		}
+
+		.box-1{
+			flex: 1;
+		}
+		.box-2{
+			flex: 1;
+		}
+		.box-3{
+			flex: 2;
+		}
+
+	 /*2nd divContainer sections div*/	
+		.container-2 div{
+			flex-basis: 25%;
+		}
+
+
+	</style>
+</head>
+<body>
+	<!--HTML main content area-->
+		<div class="container">
+			<div class="box-1">
+				<h3>Box One</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation
+				</p>
+			</div>
+
+			<div class="box-2">
+				<h3>Box Two</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				</p>
+			</div>
+
+			<div class="box-3">
+				<h3>Box Three</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				</p>
+			</div>
+		</div>
+
+	<!--2nd divContainer-->	
+		<div class="container-2">
+			<div class="box-4">
+				<h3>Box One</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation
+				</p>
+			</div>
+
+			<div class="box-5">
+				<h3>Box Two</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				</p>
+			</div>
+
+			<div class="box-6">
+				<h3>Box Three</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				</p>
+			</div>
+		</div>
+</body>
+</html>
