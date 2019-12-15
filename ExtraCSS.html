@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Extra | CSS</title>
+	<link rel="stylesheet" type="text/css" href="#">
+	<meta charset="utf-8">
+</head>
+
+
+<style type="text/css">/*The CSS for the stylesheet of this HTMl*/
+	*{
+		text-align: center;
+		font-family: sans-serif;
+	}
+ /*txtOne of content rounded border*/	
+	content h1.txtOne{
+		border: 10px solid transparent;
+		border-image: url('assets/border.png') 30 round;
+		padding: 15px;
+	}
+	content h1.txtOnePer{
+		border: 10px solid transparent;
+		border-image: url('assets/border.png') 20% round;
+		padding: 15px;
+	}
+	content h1.txtOnePerPer{
+		border: 10px solid transparent;
+		border-image: url('assets/border.png') 30% round;
+		padding: 15px;
+	}
+ /*txtTwo of content stretch border*/
+ 	content h1.txtTwo{
+ 		border: 10px solid transparent;
+ 		border-image: url('assets/border.png') 30 stretch;
+ 		padding: 15px;
+ 	}
+</style><!--END of the CSS stylesheet-->
+
+
+<body><!--HTML Body area-->
+	<!--The Main HTMl Body element-->
+	<header>
+		<h1>Advanced CSS</h1>
+	</header>
+	<hr>
+	<br>
+
+  <!--The main interface of the goal inner here-->	 
+	<content>
+	<!--Round Border with Image-->	
+		<h1 class="txtOne">border-image : url('assets/border.png') 30 round;</h1>	
+		<h1 class="txtOnePer">border-image : url('assets/border.png') 20% round;</h1>	
+		<h1 class="txtOnePerPer">border-image : url('assets/border.png') 30% round;</h1>	
+	    <br>	
+	<!--Stretch Border with Image-->	
+		<h1 class="txtTwo">border-image : url('assets/border.png') 30 stretch;</h1>
+	</content>
+</body><!--END of the HTML body area-->
+</html>

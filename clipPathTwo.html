@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Clip Path | CSS</title>
+</head>
+
+<style type="text/css">/*CSS for there stylesheet*/
+	body {
+  background-color: #f8e88c;
+  color: #555;
+  font-size: 1.1em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+hr {
+  margin: 50px 0;
+}
+
+.container {
+  margin: 40px auto 0;
+  width: 90%;
+  height: 450px;
+  padding: 3em;
+  overflow: scroll;
+  background-color: white;
+  -webkit-clip-path: polygon(17% 13%, 33% 9%, 58% 21%, 84% 20%, 83% 63%, 66% 76%, 15% 83%, 25% 45%);
+  clip-path: polygon(17% 13%, 33% 9%, 58% 21%, 84% 20%, 83% 63%, 66% 76%, 15% 83%, 25% 45%);
+  -webkit-transition: -webkit-clip-path .6s ease-out;
+  transition: -webkit-clip-path .6s ease-out; /* needs to be prefixed otherwise it's not transitioned in Chrome */
+  /* transition: clip-path .6s ease-out; */
+
+}
+
+.container:hover {
+  -webkit-clip-path: polygon(12% 6%, 29% 14%, 71% 8%, 91% 29%, 84% 85%, 54% 64%, 10% 92%, 5% 43%);
+  clip-path: polygon(12% 6%, 29% 14%, 71% 8%, 91% 29%, 84% 85%, 54% 64%, 10% 92%, 5% 43%);
+}
+
+h1 {
+  width: 50%;
+  text-align: center;
+  margin: 2em auto;
+}
+
+img {
+  max-width: 30%;
+  float: left;
+  margin: 0 15px 15px 0;
+}
+</style>
+
+<body>
+	<div class="container">
+  			<div class="element">
+    				<h1>Element with Overflow Clipped with Clip-Path</h1>
+    			<p>
+      				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, molestias doloremque perspiciatis nam atque sapiente error libero quaerat veniam expedita accusantium delectus at pariatur blanditiis commodi dolorum distinctio modi aspernatur.
+    			</p>
+    			<img src="http://tympanus.net/codrops-playground/assets/images/cssref/properties/clip-path/beach.jpg" alt="Beach">
+    			<p>
+      				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, molestias doloremque perspiciatis nam atque sapiente error libero quaerat veniam expedita accusantium delectus at pariatur blanditiis commodi dolorum distinctio modi aspernatur.
+    			</p>
+    			<p>
+      				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, molestias doloremque perspiciatis nam atque sapiente error libero quaerat veniam expedita accusantium delectus at pariatur blanditiis commodi dolorum distinctio modi aspernatur.
+    			</p>
+    			<p>
+      				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, molestias doloremque perspiciatis nam atque sapiente error libero quaerat veniam expedita accusantium delectus at pariatur blanditiis commodi dolorum distinctio modi aspernatur.
+    			</p>
+    			<p>
+      				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, molestias doloremque perspiciatis nam atque sapiente error libero quaerat veniam expedita accusantium delectus at pariatur blanditiis commodi dolorum distinctio modi aspernatur.
+    			</p>
+    			<p>
+      				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, molestias doloremque perspiciatis nam atque sapiente error libero quaerat veniam expedita accusantium delectus at pariatur blanditiis commodi dolorum distinctio modi aspernatur.
+    			</p>
+  			</div>
+	</div>
+</body>
+</html>
